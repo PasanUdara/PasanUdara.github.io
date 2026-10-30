@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111118;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5c5a3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8a882;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="198"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+
+  <!-- Glowing border ring -->
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Grid background pattern -->
+  <g clip-path="url(#circle)" opacity="0.07">
+    <line x1="50" y1="0" x2="50" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="150" y1="0" x2="150" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="250" y1="0" x2="250" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="350" y1="0" x2="350" y2="400" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="50" x2="400" y2="50" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="400" y2="100" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="400" y2="250" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="400" y2="300" stroke="#00d4ff" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="400" y2="350" stroke="#00d4ff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Body / Torso -->
+  <g clip-path="url(#circle)">
+    <ellipse cx="200" cy="370" rx="110" ry="80" fill="url(#bodyGrad)" stroke="#00d4ff" stroke-width="1" opacity="0.9"/>
+    <rect x="130" y="290" width="140" height="120" rx="10" fill="#1a1a2e" opacity="0.8"/>
+    <rect x="150" y="295" width="100" height="5" rx="2" fill="#00d4ff" opacity="0.6"/>
+    <rect x="155" y="308" width="80" height="2" rx="1" fill="#00ff88" opacity="0.4"/>
+    <rect x="155" y="318" width="60" height="2" rx="1" fill="#00ff88" opacity="0.4"/>
+    <rect x="155" y="328" width="70" height="2" rx="1" fill="#00d4ff" opacity="0.3"/>
+
+    <!-- Neck -->
+    <rect x="185" y="248" width="30" height="50" rx="8" fill="url(#skinGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="200" cy="200" rx="72" ry="80" fill="url(#skinGrad)"/>
+
+    <!-- Hair -->
+    <ellipse cx="200" cy="138" rx="72" ry="40" fill="#1a0a00"/>
+    <ellipse cx="200" cy="128" rx="68" ry="30" fill="#2d1200"/>
+    <rect x="130" y="138" width="16" height="50" rx="8" fill="#1a0a00"/>
+    <rect x="254" y="138" width="16" height="50" rx="8" fill="#1a0a00"/>
+
+    <!-- Eyes -->
+    <ellipse cx="175" cy="195" rx="11" ry="8" fill="white"/>
+    <ellipse cx="225" cy="195" rx="11" ry="8" fill="white"/>
+    <circle cx="177" cy="196" r="6" fill="#1a1a2e"/>
+    <circle cx="227" cy="196" r="6" fill="#1a1a2e"/>
+    <circle cx="179" cy="194" r="2.5" fill="#00d4ff" opacity="0.9"/>
+    <circle cx="229" cy="194" r="2.5" fill="#00d4ff" opacity="0.9"/>
+    <circle cx="181" cy="192" r="1" fill="white"/>
+    <circle cx="231" cy="192" r="1" fill="white"/>
+
+    <!-- Eyebrows -->
+    <path d="M164 183 Q175 178 186 183" stroke="#1a0a00" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M214 183 Q225 178 236 183" stroke="#1a0a00" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M197 205 Q193 220 188 225 Q200 230 212 225 Q207 220 203 205" fill="#d4957a" opacity="0.5"/>
+
+    <!-- Smile -->
+    <path d="M183 240 Q200 255 217 240" stroke="#c07050" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Ears -->
+    <ellipse cx="128" cy="200" rx="10" ry="15" fill="url(#skinGrad)"/>
+    <ellipse cx="272" cy="200" rx="10" ry="15" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Corner accent dots -->
+  <circle cx="28" cy="28" r="4" fill="#00d4ff" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="372" cy="28" r="4" fill="#00ff88" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="28" cy="372" r="4" fill="#00ff88" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="372" cy="372" r="4" fill="#00d4ff" opacity="0.6" filter="url(#glow)"/>
+
+  <!-- AI indicator text -->
+  <text x="200" y="392" font-family="monospace" font-size="9" fill="#00d4ff" text-anchor="middle" opacity="0.6">[ AI // ML // DATA ]</text>
+</svg>
