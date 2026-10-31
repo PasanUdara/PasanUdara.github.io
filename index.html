@@ -59,6 +59,197 @@
       --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
+    /* ==========================================================================
+       LIGHT THEME (Modern Minimal Cyber)
+       ========================================================================== */
+    [data-theme="light"] {
+      --bg-dark: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.88);
+      --bg-card-hover: rgba(255, 255, 255, 0.98);
+      --border-subtle: rgba(15, 23, 42, 0.08);
+      --border-glow: rgba(2, 132, 199, 0.35);
+
+      --cyan: #0284c7;
+      --cyan-glow: rgba(2, 132, 199, 0.2);
+      --emerald: #059669;
+      --emerald-glow: rgba(5, 150, 105, 0.2);
+      --purple: #7c3aed;
+      --purple-glow: rgba(124, 58, 237, 0.2);
+      --amber: #d97706;
+
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+    }
+
+    [data-theme="light"] {
+      color-scheme: light;
+    }
+
+    [data-theme="light"] .ambient-bg {
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(2, 132, 199, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(124, 58, 237, 0.06) 0%, transparent 45%);
+    }
+
+    [data-theme="light"] .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    [data-theme="light"] .mobile-drawer {
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    [data-theme="light"] .logo-text,
+    [data-theme="light"] .section-title,
+    [data-theme="light"] .hero-name,
+    [data-theme="light"] .metric-val,
+    [data-theme="light"] .about-content h3,
+    [data-theme="light"] .highlight-card h5,
+    [data-theme="light"] .edu-info h4,
+    [data-theme="light"] .skill-cat-header h4,
+    [data-theme="light"] .project-title,
+    [data-theme="light"] .timeline-role,
+    [data-theme="light"] .cert-info h4,
+    [data-theme="light"] .contact-info h3,
+    [data-theme="light"] .contact-details a,
+    [data-theme="light"] .contact-details span {
+      color: #0f172a;
+    }
+
+    [data-theme="light"] .badge-text h4 {
+      color: #0f172a;
+    }
+
+    [data-theme="light"] .section-title .gradient-text {
+      background: linear-gradient(135deg, #0f172a 30%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    [data-theme="light"] .btn-outline {
+      background: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.12);
+      color: #0f172a;
+    }
+    [data-theme="light"] .btn-outline:hover {
+      background: rgba(0, 0, 0, 0.06);
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    [data-theme="light"] .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.25);
+    }
+    [data-theme="light"] .btn-primary:hover {
+      color: #ffffff;
+      box-shadow: 0 6px 25px rgba(2, 132, 199, 0.4);
+    }
+
+    [data-theme="light"] .hero-status-pill {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: #047857;
+    }
+
+    [data-theme="light"] .hero-greeting {
+      color: #0284c7;
+    }
+
+    [data-theme="light"] .hero-role-wrapper {
+      color: #475569;
+    }
+
+    [data-theme="light"] .section-tag,
+    [data-theme="light"] .project-category-badge {
+      background: rgba(2, 132, 199, 0.08);
+      border-color: rgba(2, 132, 199, 0.25);
+      color: #0284c7;
+    }
+
+    [data-theme="light"] .filter-btn {
+      background: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #475569;
+    }
+    [data-theme="light"] .filter-btn:hover {
+      color: #0f172a;
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+    [data-theme="light"] .filter-btn.active {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(124, 58, 237, 0.12));
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    [data-theme="light"] .about-badge-card {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    [data-theme="light"] .highlight-card,
+    [data-theme="light"] .edu-item,
+    [data-theme="light"] .skill-category-card,
+    [data-theme="light"] .proficiency-section,
+    [data-theme="light"] .project-card,
+    [data-theme="light"] .timeline-card,
+    [data-theme="light"] .cert-card,
+    [data-theme="light"] .contact-card-item,
+    [data-theme="light"] .contact-form-card {
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    [data-theme="light"] .skill-chip,
+    [data-theme="light"] .p-tag,
+    [data-theme="light"] .timeline-period {
+      background: rgba(0, 0, 0, 0.04);
+      color: #334155;
+    }
+
+    [data-theme="light"] .meter-bar {
+      background: rgba(0, 0, 0, 0.06);
+    }
+
+    [data-theme="light"] .timeline-dot {
+      background: #ffffff;
+    }
+
+    [data-theme="light"] .form-control {
+      background: rgba(0, 0, 0, 0.02);
+      border-color: rgba(0, 0, 0, 0.12);
+      color: #0f172a;
+    }
+    [data-theme="light"] .form-control:focus {
+      background: #ffffff;
+    }
+
+    [data-theme="light"] .footer {
+      background: #f1f5f9;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    [data-theme="light"] .social-btn {
+      background: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.08);
+      color: #475569;
+    }
+
+    [data-theme="light"] .back-to-top {
+      background: #ffffff;
+      color: var(--cyan);
+    }
+
+    [data-theme="light"] .toast-notice {
+      background: rgba(255, 255, 255, 0.98);
+      color: #0f172a;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
     /* Reset & Core */
     *, *::before, *::after {
       box-sizing: border-box;
@@ -330,6 +521,45 @@
       display: flex;
       align-items: center;
       gap: 12px;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 1.05rem;
+      padding: 0;
+    }
+
+    .theme-toggle-btn:hover {
+      background: rgba(0, 240, 255, 0.12);
+      border-color: var(--cyan);
+      color: var(--cyan);
+      transform: scale(1.08) rotate(12deg);
+    }
+
+    .theme-icon-sun {
+      display: none;
+    }
+    .theme-icon-moon {
+      display: block;
+    }
+
+    [data-theme="light"] .theme-icon-sun {
+      display: block;
+      color: var(--amber);
+    }
+    [data-theme="light"] .theme-icon-moon {
+      display: none;
     }
 
     .mobile-toggle {
@@ -1552,6 +1782,10 @@
       </ul>
 
       <div class="nav-cta">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Mode">
+          <i class="fas fa-sun theme-icon-sun"></i>
+          <i class="fas fa-moon theme-icon-moon"></i>
+        </button>
         <a href="assets/Pasan_Udara_CV.pdf" download="Pasan_Udara_CV.pdf" class="btn btn-outline btn-sm">
           <i class="fas fa-file-arrow-down"></i> Resume
         </a>
@@ -1563,6 +1797,13 @@
 
     <!-- Mobile Drawer -->
     <div class="mobile-drawer" id="mobileDrawer">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0 14px 0; border-bottom: 1px solid var(--border-subtle);">
+        <span style="font-size: 0.95rem; color: var(--text-muted); font-weight: 600;">Switch Theme</span>
+        <button class="theme-toggle-btn" id="mobileThemeToggle" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Mode">
+          <i class="fas fa-sun theme-icon-sun"></i>
+          <i class="fas fa-moon theme-icon-moon"></i>
+        </button>
+      </div>
       <a href="#about" class="mobile-link">About</a>
       <a href="#skills" class="mobile-link">Skills</a>
       <a href="#projects" class="mobile-link">Projects</a>
@@ -2418,6 +2659,32 @@
        ========================================================================== -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // 0. Dark / Light Theme System
+      const themeToggle = document.getElementById('themeToggle');
+      const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+      const rootHtml = document.documentElement;
+
+      function setTheme(theme) {
+        rootHtml.setAttribute('data-theme', theme);
+        localStorage.setItem('portfolio-theme', theme);
+      }
+
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else {
+        setTheme('dark');
+      }
+
+      function toggleTheme() {
+        const currentTheme = rootHtml.getAttribute('data-theme') || 'dark';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+      }
+
+      if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+      if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
       // 1. Navbar Scroll Effect & Back-to-Top
       const navbar = document.getElementById('navbar');
       const backToTop = document.getElementById('backToTop');
@@ -2586,9 +2853,10 @@
           }
 
           // Draw Node
+          const isLight = rootHtml.getAttribute('data-theme') === 'light';
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-          ctx.fillStyle = 'rgba(0, 240, 255, 0.6)';
+          ctx.fillStyle = isLight ? 'rgba(2, 132, 199, 0.65)' : 'rgba(0, 240, 255, 0.6)';
           ctx.fill();
 
           // Connect Neighbors
@@ -2603,7 +2871,7 @@
               ctx.moveTo(p.x, p.y);
               ctx.lineTo(p2.x, p2.y);
               const alpha = (1 - dist / 130) * 0.22;
-              ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+              ctx.strokeStyle = isLight ? `rgba(2, 132, 199, ${alpha * 0.85})` : `rgba(0, 240, 255, ${alpha})`;
               ctx.lineWidth = 0.8;
               ctx.stroke();
             }
